@@ -33,13 +33,5 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        start_url: '/',
-        display: 'minimal-ui',
-        icon: 'src/images/favicon.png', // This path is relative to the root of the site.
-      },
-    },
   ],
 }
