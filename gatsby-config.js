@@ -24,7 +24,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: "Blogger",
+    title: "Cape - A Gatsby Contentful Site",
     description: "A Sample of Gatsby Blogging Theme",
     url: "https://cape.netlify.com/",
     twitterUsername: "@abc",
