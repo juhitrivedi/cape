@@ -25,6 +25,9 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: "Blogger",
+    description: "A Sample of Gatsby Blogging Theme",
+    url: "https://cape.netlify.com/",
+    twitterUsername: "@abc",
   },
   plugins: [
     'gatsby-plugin-react-helmet',

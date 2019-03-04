@@ -2,7 +2,8 @@ import React from "react"
 import get from "lodash/get"
 import Helmet from "react-helmet"
 import Template from "../components/layout"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 class indexPage extends React.Component {
   render() {
@@ -11,8 +12,8 @@ class indexPage extends React.Component {
 
     return (
       <Template>
+        <Helmet title={siteTitle} />
         <div className="indexpage">
-          <Helmet title={siteTitle} />
           <div className="right-section blog-post">
             <div className="container">
               <div className="row">
@@ -60,6 +61,13 @@ export default indexPage
 
 export const pageQuery = graphql`
   query HomeQuery {
+    site {
+      siteMetadata {
+        title
+        description
+        url
+      }
+    }
     allContentfulBlog(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {
