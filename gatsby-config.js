@@ -30,7 +30,6 @@ module.exports = {
     twitterUsername: "@abc",
   },
   plugins: [
-    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
