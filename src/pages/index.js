@@ -25,7 +25,10 @@ class indexPage extends React.Component {
                             <Link to={node.slug}>{node.title}</Link>
                           </h2>
                           <span className="entry-meta">
-                            Created on {node.publishDate}
+                            Created on {node.publishDate} By{" "}
+                            <Link to="/about" className="authorname">
+                              {node.author}
+                            </Link>
                           </span>
                         </div>
                         <div className="entry-media">
@@ -62,8 +65,8 @@ export const pageQuery = graphql`
         node {
           title
           slug
+          author
           publishDate(formatString: "MMMM Do, YYYY")
-          tags
           heroImage {
             file {
               url

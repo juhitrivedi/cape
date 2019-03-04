@@ -27,10 +27,10 @@ export class Header extends Component {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about/">About</Link>
                   </li>
                   <li>
-                    <Link to="">Contact</Link>
+                    <Link to="/contact/">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -39,28 +39,28 @@ export class Header extends Component {
               <div className="text-right">
                 <ul className="social-share list-inline">
                   <li className="list-inline-item">
-                    <Link to="">
+                    <Link to="/">
                       <span className="icon">
                         <FontAwesomeIcon icon={faFacebookF} />
                       </span>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="">
+                    <Link to="/">
                       <span className="icon">
                         <FontAwesomeIcon icon={faTwitter} />
                       </span>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="">
+                    <Link to="/">
                       <span className="icon">
                         <FontAwesomeIcon icon={faGooglePlusG} />
                       </span>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="">
+                    <Link to="/">
                       <span className="icon">
                         <FontAwesomeIcon icon={faLinkedinIn} />
                       </span>

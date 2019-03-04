@@ -13,7 +13,8 @@ export class Footer extends Component {
                 <img src={logoImg} alt="brand logo" />
               </Link>
               <p className="copyright">
-                Copyrights © 2019 <b>Cape Theme</b> <br />
+                Copyrights © 2019 <b>Cape Theme</b>
+                <br />
                 All Rights Reserved.
               </p>
             </div>
