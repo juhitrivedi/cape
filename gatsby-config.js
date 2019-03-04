@@ -27,6 +27,7 @@ module.exports = {
     title: "Blogger",
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     {

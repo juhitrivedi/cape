@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import get from "lodash/get"
 import Template from "../components/layout"
+import Helmet from "react-helmet"
 
 class BlogPostTemplate extends Component {
   render() {
@@ -8,6 +9,7 @@ class BlogPostTemplate extends Component {
 
     return (
       <Template>
+        <Helmet title={`${post.title}`} />
         <div className="inner-blog-post">
           <div className="container">
             <div className="row">

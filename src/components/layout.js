@@ -1,45 +1,60 @@
 import React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Helmet from "react-helmet"
+import { StaticQuery, graphql } from "gatsby"
 
 import "bootstrap/dist/css/bootstrap.css"
 import "./base.css"
 
-class Template extends React.Component {
-  render() {
-    const { children } = this.props
-
-    return (
-      <div>
-        <Header /> {children} <Footer />
-      </div>
-    )
-  }
-}
-
-export default Template
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allContentfulBlog(sort: { fields: [publishDate], order: DESC }) {
-      edges {
-        node {
-          title
-          slug
-          author
-          publishDate(formatString: "MMMM Do, YYYY")
-          heroImage {
-            file {
-              url
-            }
+const Template = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
           }
-          body {
-            childMarkdownRemark {
-              html
+        }
+        allContentfulBlog(sort: { fields: [publishDate], order: DESC }) {
+          edges {
+            node {
+              title
+              slug
+              author
+              publishDate(formatString: "MMMM Do, YYYY")
+              heroImage {
+                file {
+                  url
+                }
+              }
+              body {
+                childMarkdownRemark {
+                  html
+                }
+              }
             }
           }
         }
       }
-    }
-  }
-`
+    `}
+    render={data => (
+      <>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: "description", content: "Sample" },
+            { name: "keywords", content: "sample, something" },
+          ]}
+        >
+          <html lang="en" />
+        </Helmet>
+        <Header />
+        {children}
+        <Footer />
+      </>
+    )}
+  />
+)
+
+export default Template
