@@ -30,9 +30,23 @@ module.exports = {
     twitterUsername: "@abc",
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-react-helmet',
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [{
+          resolve: `gatsby-remark-images-contentful`,
+          options: {
+            maxHeight: 700,
+            backgroundColor: 'red',
+            linkImagesToOriginal: false,
+          },
+        }, ],
+      },
+    },
     {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,

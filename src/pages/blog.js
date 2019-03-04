@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import get from "lodash/get"
 import Helmet from "react-helmet"
 import ArticlePreview from "../components/article-preview"
+import { graphql } from "gatsby"
 
 export class BlogIndex extends Component {
   render() {

@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import get from "lodash/get"
 import Template from "../components/layout"
 import Helmet from "react-helmet"
+import { graphql } from "gatsby"
 
 class BlogPostTemplate extends Component {
   render() {
