@@ -82,50 +82,38 @@ section {
   left: 0;
   position: absolute;
   z-index: -2;
-  background: linear-gradient(
-    to right,
+  background: linear-gradient(to right,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -ms-linear-gradient(
-    left,
+    #fff 100%);
+  background: -ms-linear-gradient(left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -o-linear-gradient(
-    left,
+    #fff 100%);
+  background: -o-linear-gradient(left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -webkit-linear-gradient(
-    left,
+    #fff 100%);
+  background: -webkit-linear-gradient(left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -moz-linear-gradient(
-    left,
+    #fff 100%);
+  background: -moz-linear-gradient(left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -webkit-gradient(
-    linear,
+    #fff 100%);
+  background: -webkit-gradient(linear,
     left top,
     right top,
     color-stop(0%, #fff),
     color-stop(35%, #eeeeee),
     color-stop(65%, #eeeeee),
-    color-stop(100%, #fff)
-  );
+    color-stop(100%, #fff));
 }
 
 /* Body - Home */
@@ -185,6 +173,7 @@ section {
   margin: 0 auto;
   max-height: 700px;
   display: block;
+  transition: all 0.2s ease-in-out 0.2s !important;
 }
 
 .blog-post article:hover .entry-media img {
@@ -349,29 +338,23 @@ section {
   left: 0;
   position: absolute;
   z-index: -2;
-  background: linear-gradient(
-    to right,
+  background: linear-gradient(to right,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -moz-linear-gradient(
-    left,
+    #fff 100%);
+  background: -moz-linear-gradient(left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%
-  );
-  background: -webkit-gradient(
-    linear,
+    #fff 100%);
+  background: -webkit-gradient(linear,
     left top,
     right top,
     color-stop(0%, #fff),
     color-stop(35%, #eeeeee),
     color-stop(65%, #eeeeee),
-    color-stop(100%, #fff)
-  );
+    color-stop(100%, #fff));
 }
 
 /* contact */
@@ -448,7 +431,7 @@ form.contactForm .field ul {
   padding-left: 1em;
 }
 
-form.contactForm > .actions {
+form.contactForm>.actions {
   margin: 2.5em 0 0 !important;
 }
 
@@ -569,9 +552,11 @@ form.contactForm > .actions {
   padding: 210px 0;
   background-color: #f4f8fb;
 }
+
 .successpage p {
   margin: 65px 0 0;
 }
+
 .successpage .backtohome {
   color: #00a99b;
   font-weight: bold;

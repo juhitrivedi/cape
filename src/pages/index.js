@@ -3,6 +3,7 @@ import get from "lodash/get"
 import Helmet from "react-helmet"
 import Template from "../components/layout"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 class indexPage extends React.Component {
   render() {
@@ -32,7 +33,10 @@ class indexPage extends React.Component {
                           </span>
                         </div>
                         <div className="entry-media">
-                          <img src={node.heroImage.file.url} alt={node.title} />
+                          <Img
+                            fluid={node.heroImage.fluid}
+                            backgroundColor={"#f4f8fb"}
+                          />
                         </div>
                         <div className="entry-content-bottom">
                           <p className="entry-content">
@@ -77,6 +81,9 @@ export const pageQuery = graphql`
           heroImage {
             file {
               url
+            }
+            fluid(maxWidth: 1800) {
+              ...GatsbyContentfulFluid_withWebp_noBase64
             }
           }
           body {
