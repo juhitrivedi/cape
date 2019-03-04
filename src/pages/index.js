@@ -3,7 +3,6 @@ import get from "lodash/get"
 import Helmet from "react-helmet"
 import Template from "../components/layout"
 import { Link, graphql } from "gatsby"
-import Helmet from "react-helmet"
 
 class indexPage extends React.Component {
   render() {
