@@ -18,7 +18,7 @@ Kick off your project with this gatsby + contentful demo. You can have a look at
 
     ```sh
     # create a new Gatsby site using this starter
-    npx gatsby new your-project-name https://github.com/juhi-trivedi/cape.git
+    npx gatsby new your-project-name https://github.com/juhitrivedi/cape.git
     ```
 
 1.  **Start developing.**
@@ -49,4 +49,4 @@ To run this starter, you need to add your own contentful credentials by creating
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/juhi-trivedi/cape.git)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/juhitrivedi/cape.git)
