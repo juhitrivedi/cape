@@ -31,7 +31,7 @@
     "gatsby-remark-images-contentful": "^2.1.32",
     "gatsby-source-contentful": "^2.1.89",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^5.25.1",
     "js-yaml": "^3.13.1",
     "loadash": "^1.0.0",
     "prop-types": "^15.7.2",
